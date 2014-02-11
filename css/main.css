@@ -1,0 +1,124 @@
+
+body {
+	font-family: Verdana;
+
+}
+
+*:focus {
+	outline: none;
+}
+h1 {
+	font-size: 2em;
+	line-height: 2.1em;
+	font-weight: bold;
+	
+}
+
+button {
+	border-radius: 4px;
+	padding: 7px 10px;
+	background-color: #efd434;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: uppercase;
+	border: 1px solid black;
+	color: black;
+}
+
+button:hover {
+	box-shadow: 2px 2px rgb(173, 173, 173);
+	cursor: pointer; cursor: hand;
+	color:black;
+
+}
+#conatainer {
+	position: relative;
+}
+
+#frog {
+	display: inline-block;
+	vertical-align: text-top;
+	width: 40%;
+}
+.main {
+	width: 40%;
+	display:inline-block;
+	vertical-align: text-top;
+	/*background: linear-gradient(white, rgb(240, 240, 240));*/
+	position: relative;
+	padding: 20px;
+}
+#write_item {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	margin-left: 12%;
+	width:70%;
+	font-weight: normal;
+	text-indent: 5px;
+	border: 1px solid black;
+	border-radius: 2px;
+	}
+
+#write_item:focus {
+	border: 1px solid #BB3131;
+}
+
+ #add, #delete {
+ 	
+ 	float: right;
+ right: 0;
+
+ }
+
+li {
+	text-indent: 12%;
+	line-height: 2em;
+
+}
+#Select_All {
+
+	float: left;
+	margin-left: 12%;
+	border-radius: 20px;
+}
+
+#undo {
+	display:block;
+	clear:both;
+	border-radius: 20px;
+	font-size: .75em;
+	padding: 3px 5px;
+	position:relative;
+	top: 10px;
+	margin: auto;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+/* Large Screens */
+@media only screen and (min-width: 801px) {
+
+h1 {
+	text-align: left;
+	text-indent: 10%;
+	}
+}
+
+/* Small Screens */
+@media only screen and (max-width: 800px) {
+#frog {
+	margin: auto;
+	display:block;
+	}
+.main {
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+h1 {
+	text-align: center;
+}
+	}
+	
