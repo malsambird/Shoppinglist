@@ -46,9 +46,7 @@ button:hover {
 #conatainer {
 	position: relative;
 }
-.edits {
-	margin-top: 20px;
-}
+
 #frog {
 	display: inline-block;
 	vertical-align: text-top;
@@ -88,8 +86,6 @@ li {
 	text-transform: capitalize;
 
 }
-
-
 #Select_All {
 
 	float: left;
@@ -138,10 +134,10 @@ h1 {
 	margin: auto;
 	width: 90%;
 	overflow: auto;
-
-}
+	}
 h1 {
 	text-align: center;
-}
 	}
+
+}
 	

@@ -43,17 +43,11 @@ $("#all:checkbox").change(function(){
   }
   });
 
-<<<<<<< HEAD
-// If checked, strikethrough
-$('input:checkbox').change(function(){
-   if($(this).is(":checked")){
-=======
 // If checked, add strikethrough
 $("input:checkbox").change(function(){
    if($(this).is(":checked")) {
->>>>>>> master
         $(this).parent("li").addClass("strike");
-    }else{
+    } else {
         $(this).parent("li").removeClass("strike");
     }
 
