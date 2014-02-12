@@ -1,6 +1,6 @@
 
 body {
-	font-family: Verdana;
+	font-family: Zapfino, Tahoma, Verdana;
 
 }
 
@@ -8,27 +8,39 @@ body {
 	outline: none;
 }
 h1 {
-	font-size: 2em;
-	line-height: 2.1em;
+	font-size: 1.5em;
+	line-height: 4em;
 	font-weight: bold;
 	
 }
 
 button {
-	border-radius: 4px;
-	padding: 7px 10px;
-	background-color: #efd434;
+	border-radius: 100%;
+	background-color: white;
 	font-weight: bold;
 	font-size: 1em;
 	text-transform: uppercase;
 	border: 1px solid black;
 	color: black;
+	padding: 3px 5px;
 }
 
+#add {
+	padding: 7px 10px;
+}
+
+ #add, #delete {
+ 	
+ 	float: right;
+
+
+ }
+
 button:hover {
-	box-shadow: 2px 2px rgb(173, 173, 173);
+	box-shadow: 1px 1px rgb(173, 173, 173);
 	cursor: pointer; cursor: hand;
-	color:black;
+	border: 1px solid #BB3131;
+	background-color: rgb(151, 202, 86);
 
 }
 #conatainer {
@@ -46,7 +58,7 @@ button:hover {
 	width: 40%;
 	display:inline-block;
 	vertical-align: text-top;
-	/*background: linear-gradient(white, rgb(240, 240, 240));*/
+	background: linear-gradient(white, rgb(240, 240, 240));
 	position: relative;
 	padding: 20px;
 }
@@ -54,9 +66,10 @@ button:hover {
 	font-size: 1.3em;
 	line-height: 1.4em;
 	margin-left: 12%;
-	width:70%;
-	font-weight: normal;
+	width:67%;
 	text-indent: 5px;
+	font-family: verdana;
+	font-weight: lighter;
 	border: 1px solid black;
 	border-radius: 2px;
 	}
@@ -65,16 +78,14 @@ button:hover {
 	border: 1px solid #BB3131;
 }
 
- #add, #delete {
- 	
- 	float: right;
- right: 0;
-
- }
+ul {
+	margin-top: 20px;
+}
 
 li {
-	text-indent: 12%;
-	line-height: 2em;
+	text-indent: 15%;
+	line-height: 3.2em;
+	text-transform: capitalize;
 
 }
 
@@ -83,7 +94,9 @@ li {
 
 	float: left;
 	margin-left: 12%;
+	margin-top: 15px;
 	border-radius: 20px;
+	font-weight: bold;
 }
 
 #undo {
@@ -100,7 +113,11 @@ li {
 .strike {
 	text-decoration: line-through;
 }
+#edits {
+	margin-top: 20px;
+	
 
+}
 /* Large Screens */
 @media only screen and (min-width: 801px) {
 
@@ -120,6 +137,8 @@ h1 {
 	display: block;
 	margin: auto;
 	width: 90%;
+	overflow: auto;
+
 }
 h1 {
 	text-align: center;

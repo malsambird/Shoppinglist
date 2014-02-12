@@ -1,28 +1,26 @@
 $(document).ready(function(){
 
-$("#write_item").focus();
+  $("#write_item").focus();
   
 
 // function for adding new item
-function additem(){
-  var item=$("#write_item").val();
-  //if add item area is blank, no item will be added
-  if (item === "" || item === " "){
+  function additem(){
+    var item=$("#write_item").val();
+    //if blank, no item will be added
+   if (item === "" || item === " "){
     return(false);
+   }
+   else {
+   var newitem=document.createElement("li");
+   newitem.innerHTML="<input type='checkbox'>"+item+"";
+   $("ul").prepend(newitem);
+   $("#write_item").val("").focus();
   }
-  else {
-  var newitem=document.createElement("li");
-  newitem.innerHTML="<input type='checkbox'>"+item+"</input>";
-  $("ul").prepend(newitem);
-  $("#write_item").val("");
-  $("#write_item").focus();
-}
 }
 
-//Clicking to add new item to the list
+//Clicking to add new item
   $("#add").click(function(){
     additem();
-   
   });
 
 //Pressing enter to add new item
@@ -32,20 +30,28 @@ $("#write_item").keydown(function(e) {
     e.preventDefault();
     }
   });
-//Select All button
-$("#Select_All").click(function(){
-  $("input:checkbox").prop("checked", true);
-  if($("input:checkbox").is(":checked")) {
-        $("input:checkbox").parent("li").addClass("strike");
-    } else {
-        $("input:checkbox").parent("li").removeClass("strike");
-    }
-});
 
+//Select All checkbox
+$("#all:checkbox").change(function(){
+  if($(this).is(":checked")) {
+    $("li").find("input:checkbox").prop("checked", true);
+    $("input:checkbox").parent("li").addClass("strike");
+  
+  } else {
+    $("li").find("input:checkbox").prop("checked", false);
+    $("input:checkbox").parent("li").removeClass("strike");
+  }
+  });
 
+<<<<<<< HEAD
 // If checked, strikethrough
 $('input:checkbox').change(function(){
    if($(this).is(":checked")){
+=======
+// If checked, add strikethrough
+$("input:checkbox").change(function(){
+   if($(this).is(":checked")) {
+>>>>>>> master
         $(this).parent("li").addClass("strike");
     }else{
         $(this).parent("li").removeClass("strike");
@@ -53,11 +59,11 @@ $('input:checkbox').change(function(){
 
 });
 
-
-
-//delete buttton
+//delete buttton (for checked items)
 $("#delete").click(function(){
   $(":checked").parent("li").remove();
+  //uncheck "select all" button
+  $("#all:checkbox").prop("checked", false);
 
   });
 });
