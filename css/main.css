@@ -34,7 +34,9 @@ button:hover {
 #conatainer {
 	position: relative;
 }
-
+.edits {
+	margin-top: 20px;
+}
 #frog {
 	display: inline-block;
 	vertical-align: text-top;
@@ -75,6 +77,8 @@ li {
 	line-height: 2em;
 
 }
+
+
 #Select_All {
 
 	float: left;

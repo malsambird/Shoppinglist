@@ -25,7 +25,7 @@ function additem(){
    
   });
 
-//Pressing enter to ass new item
+//Pressing enter to add new item
 $("#write_item").keydown(function(e) {
   if (e.keyCode == 13) {
     additem();
@@ -43,11 +43,11 @@ $("#Select_All").click(function(){
 });
 
 
-// If checked, strigethrough
+// If checked, strikethrough
 $('input:checkbox').change(function(){
-   if($(this).is(":checked")) {
+   if($(this).is(":checked")){
         $(this).parent("li").addClass("strike");
-    } else {
+    }else{
         $(this).parent("li").removeClass("strike");
     }
 
