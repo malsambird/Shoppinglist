@@ -63,7 +63,7 @@ button:hover {
 #write_item {
 	font-size: 1.3em;
 	line-height: 1.4em;
-	margin-left: 12%;
+	margin-left: 10%;
 	width:67%;
 	text-indent: 5px;
 	font-family: verdana;
@@ -89,7 +89,7 @@ li {
 #Select_All {
 
 	float: left;
-	margin-left: 12%;
+	margin-left: 10%;
 	margin-top: 15px;
 	border-radius: 20px;
 	font-weight: bold;

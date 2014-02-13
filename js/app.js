@@ -44,7 +44,7 @@ $("#all:checkbox").change(function(){
   });
 
 // If checked, add strikethrough
-$("input:checkbox").change(function(){
+$("ul").delegate("input:checkbox", 'change', function(){
    if($(this).is(":checked")) {
         $(this).parent("li").addClass("strike");
     } else {
